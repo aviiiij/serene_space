@@ -38,8 +38,12 @@ body {
 }
 
 #navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
   background-color: #dd8fb3;
   height: 6vh;
+  z-index: 99999;
 }
 
 .greeting {
@@ -86,7 +90,7 @@ body {
 
 #projects {
   background-color: #fff;
-  background-image: url(../img/border.jpg); 
+  background-image: url(../img/border.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -199,8 +203,8 @@ body {
 }
 
 .wrapper {
-  width:40%;
-  margin:15px auto;
+  width: 40%;
+  margin: 15px auto;
   padding: 15px;
   position: absolute;
   top: 120%;
