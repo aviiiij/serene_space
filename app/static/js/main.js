@@ -16,3 +16,4 @@ function typeWriter(i=0, index=1, direction=1){
 }   
 
 document.addEventListener("DOMContentLoaded", () => typeWriter());
+
