@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, send_from_directory, request
+from flask import Flask, render_template, send_from_directory, request, redirect
 from dotenv import load_dotenv
 from werkzeug.security import generate_password_hash, check_password_hash
 from app.db import get_db
@@ -44,7 +44,7 @@ def register():
             return error, 418
 
     ## TODO: Return a register page
-    return "Register Page not yet implemented", 501
+    return render_template('register.html')
 
 
 @app.route('/login', methods=('GET', 'POST'))
@@ -64,12 +64,12 @@ def login():
             error = 'Incorrect password.'
 
         if error is None:
-            return "Login Successful", 200 
+            return redirect('/') 
         else:
             return error, 418
     
     ## TODO: Return a login page
-    return "Login Page not yet implemented", 501
+    return render_template('login.html')
 
 
 @app.route('/health')
