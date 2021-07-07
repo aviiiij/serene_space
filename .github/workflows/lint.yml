@@ -1,14 +1,14 @@
 name: Lint
 
-on: 
+on:
   push:
-    branches: 
+    branches:
       - master
   pull_request:
-    branches: 
+    branches:
       - master
 
-jobs: 
+jobs:
   run-linters:
     name: Run Linter
     runs-on: ubuntu-latest
