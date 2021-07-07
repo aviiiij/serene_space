@@ -91,7 +91,7 @@ def login():
 
 @app.route('/health')
 def health():
-    return 'Hello, This is a Health Check'
+    return 'Hello, This is a Health Check and also a workflow check'
 
 
 if __name__ == "__main__":
