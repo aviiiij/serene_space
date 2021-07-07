@@ -94,5 +94,10 @@ def health():
     return 'Hello, This is a Health Check and also a workflow check'
 
 
+@app.route('/action')
+def action():
+	return 'Hey, your github Action werksss part 2!!!!!'
+
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
