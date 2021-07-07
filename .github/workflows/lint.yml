@@ -23,10 +23,10 @@ jobs:
           python-version: 3.8
 
       - name: Install Python dependencies
-        uses: pip install black flake8
+        run: pip install black flake8
 
       - name: Run Linters
         uses: wearerequired/lint-action@v1
         with:
           black: true
-          flake9: true
+          flake8: true
